@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Root from "../pages/Root/Root";
 import Home from "../pages/Home/Home";
 
-import AllApps from "../pages/AllApps/AllApps";
+import Apps from "../pages/Apps/Apps";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +16,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "/apps",
-        Component: AllApps,
+        loader: async () => {
+          const res = await fetch("/apps.json");
+          if (!res.ok) throw new Error("Failed to fetch apps data");
+          return res.json();
+        },
+        Component: Apps,
       },
     ],
   },
