@@ -1,0 +1,365 @@
+[
+  {
+    "id": 1,
+    "title": "ChatFlow",
+    "companyName": "Meta",
+    "image": "https://i.ibb.co/3WZfL8M/chat.png",
+    "description": "Fast and secure messaging app with real-time chat features.",
+    "size": 45,
+    "reviews": 12500,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "SnapPix",
+    "companyName": "Snap Inc.",
+    "image": "https://i.ibb.co/2jv7Z9C/camera.png",
+    "description": "Capture and share moments with creative filters.",
+    "size": 60,
+    "reviews": 9800,
+    "ratingAvg": 4.3,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "FitTrack",
+    "companyName": "Google",
+    "image": "https://i.ibb.co/Gx2L1Xw/fitness.png",
+    "description": "Track your workouts and stay fit every day.",
+    "size": 35,
+    "reviews": 8700,
+    "ratingAvg": 4.6,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4900 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Foodie",
+    "companyName": "Uber",
+    "image": "https://i.ibb.co/4T1xJ1m/food.png",
+    "description": "Order your favorite meals from nearby restaurants.",
+    "size": 50,
+    "reviews": 15000,
+    "ratingAvg": 4.4,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 7300 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "ShopEase",
+    "companyName": "Amazon",
+    "image": "https://i.ibb.co/Y7k5G3s/shopping.png",
+    "description": "Easy and fast online shopping experience.",
+    "size": 70,
+    "reviews": 20000,
+    "ratingAvg": 4.7,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 11800 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "MusicWave",
+    "companyName": "Spotify",
+    "image": "https://i.ibb.co/Jn0zY0S/music.png",
+    "description": "Stream your favorite songs anytime, anywhere.",
+    "size": 55,
+    "reviews": 11000,
+    "ratingAvg": 4.6,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 5800 }
+    ]
+  },
+
+  {
+    "id": 7,
+    "title": "NewsFlash",
+    "companyName": "BBC",
+    "image": "https://i.ibb.co/pXqQ6f8/news.png",
+    "description": "Stay updated with breaking news worldwide.",
+    "size": 30,
+    "reviews": 7000,
+    "ratingAvg": 4.2,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 2950 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "EduPro",
+    "companyName": "Coursera",
+    "image": "https://i.ibb.co/fG1L8zV/education.png",
+    "description": "Learn new skills with online courses.",
+    "size": 40,
+    "reviews": 8500,
+    "ratingAvg": 4.8,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 5100 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "TravelGo",
+    "companyName": "Airbnb",
+    "image": "https://i.ibb.co/6m2V1z9/travel.png",
+    "description": "Book hotels and explore destinations easily.",
+    "size": 65,
+    "reviews": 9200,
+    "ratingAvg": 4.5,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 4650 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "SecurePay",
+    "companyName": "PayPal",
+    "image": "https://i.ibb.co/3S8bK5f/payment.png",
+    "description": "Safe and fast digital payments.",
+    "size": 25,
+    "reviews": 13000,
+    "ratingAvg": 4.4,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 450 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 6450 }
+    ]
+  },
+
+  {
+    "id": 11,
+    "title": "GameZone",
+    "companyName": "Tencent",
+    "image": "https://i.ibb.co/ZmKk3bJ/game.png",
+    "description": "Play trending games with friends online.",
+    "size": 120,
+    "reviews": 18000,
+    "ratingAvg": 4.3,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 8300 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "DocScan",
+    "companyName": "Adobe",
+    "image": "https://i.ibb.co/8m9GJ1V/scan.png",
+    "description": "Scan and convert documents instantly.",
+    "size": 28,
+    "reviews": 6000,
+    "ratingAvg": 4.5,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "WeatherNow",
+    "companyName": "AccuWeather",
+    "image": "https://i.ibb.co/k9JYk2y/weather.png",
+    "description": "Real-time weather updates and forecasts.",
+    "size": 20,
+    "reviews": 7200,
+    "ratingAvg": 4.2,
+    "downloads": 260000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "NoteMaster",
+    "companyName": "Microsoft",
+    "image": "https://i.ibb.co/dpZ1Fh7/notes.png",
+    "description": "Take notes and organize your tasks efficiently.",
+    "size": 22,
+    "reviews": 8000,
+    "ratingAvg": 4.6,
+    "downloads": 310000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "VideoHub",
+    "companyName": "YouTube",
+    "image": "https://i.ibb.co/qx3Xk8d/video.png",
+    "description": "Watch and share videos globally.",
+    "size": 75,
+    "reviews": 25000,
+    "ratingAvg": 4.7,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 13600 }
+    ]
+  },
+
+  {
+    "id": 16,
+    "title": "CryptoTrack",
+    "companyName": "Binance",
+    "image": "https://i.ibb.co/VY7wZ0q/crypto.png",
+    "description": "Track cryptocurrency prices and trends.",
+    "size": 33,
+    "reviews": 9500,
+    "ratingAvg": 4.4,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "RideNow",
+    "companyName": "Uber",
+    "image": "https://i.ibb.co/x7sJY5z/ride.png",
+    "description": "Book rides instantly and travel easily.",
+    "size": 48,
+    "reviews": 14000,
+    "ratingAvg": 4.3,
+    "downloads": 650000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 5800 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "PhotoEdit",
+    "companyName": "Adobe",
+    "image": "https://i.ibb.co/7R0Zy8H/edit.png",
+    "description": "Edit photos with professional tools.",
+    "size": 68,
+    "reviews": 10000,
+    "ratingAvg": 4.5,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "HealthPlus",
+    "companyName": "Samsung",
+    "image": "https://i.ibb.co/0nq0h6F/health.png",
+    "description": "Monitor your health and wellness.",
+    "size": 38,
+    "reviews": 7800,
+    "ratingAvg": 4.4,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3700 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "TaskFlow",
+    "companyName": "Notion",
+    "image": "https://i.ibb.co/Ny7r0XG/task.png",
+    "description": "Manage tasks and boost productivity.",
+    "size": 27,
+    "reviews": 8600,
+    "ratingAvg": 4.7,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 4750 }
+    ]
+  }
+]
