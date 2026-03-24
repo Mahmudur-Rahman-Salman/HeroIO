@@ -47,33 +47,33 @@ const Footer = () => {
               </h3>
 
               <div className="flex gap-4 mt-4 text-xl">
-                <a href="#" className="hover:text-white">
+                <Link to="#" className="hover:text-white">
                   <FaFacebook />
-                </a>
-                <a href="#" className="hover:text-white">
+                </Link>
+                <Link to="#" className="hover:text-white">
                   <FaTwitter />
-                </a>
-                <a href="#" className="hover:text-white">
+                </Link>
+                <Link to="#" className="hover:text-white">
                   <FaLinkedin />
-                </a>
-                <a
-                  href="https://github.com/your-username"
+                </Link>
+                <Link
+                  to="https://github.com/your-username"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-white"
                 >
                   <FaGithub />
-                </a>
+                </Link>
               </div>
 
-              <a
-                href="https://github.com/Mahmudur-Rahman-Salman"
+              <Link
+                to="https://github.com/Mahmudur-Rahman-Salman"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block mt-4 px-4 py-2 bg-[#7E45EA] text-white text-sm rounded hover:opacity-90"
               >
                 Contribute
-              </a>
+              </Link>
             </div>
           </div>
 
