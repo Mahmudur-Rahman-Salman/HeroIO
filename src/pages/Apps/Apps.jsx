@@ -41,7 +41,7 @@ const Apps = () => {
               <div
                 key={app.id}
                 className="border rounded p-4 cursor-pointer hover:shadow-lg transition"
-                onClick={() => navigate(`/app/${app.id}`)}
+                onClick={() => navigate(`/apps/${app.id}`)}
               >
                 <img
                   src={app.image}
