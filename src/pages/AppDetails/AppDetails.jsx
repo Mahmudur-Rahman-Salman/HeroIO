@@ -15,12 +15,17 @@ const AppDetails = () => {
   const appsData = useLoaderData();
   const { id } = useParams();
   const app = appsData.find((a) => a.id === parseInt(id));
-  const [installed, setInstalled] = useState(false);
   const navigation = useNavigation();
+
+  // Initialize installed state from localStorage
+  const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
+  const [installed, setInstalled] = useState(
+    installedApps.some((a) => a.id === parseInt(id)),
+  );
 
   if (navigation.state === "loading") {
     return (
-      <div className="flex items-center justify-center min-h-50">
+      <div className="flex items-center justify-center min-h-screen">
         <div className="w-10 h-10 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div>
       </div>
     );
@@ -29,13 +34,8 @@ const AppDetails = () => {
   if (!app)
     return (
       <div className="flex flex-col items-center justify-center min-h-screen text-center px-4">
-        {/* Icon */}
         <FaExclamationCircle className="text-red-500 text-6xl mb-4" />
-
-        {/* Title */}
         <h2 className="text-2xl font-bold text-gray-800">App Not Found</h2>
-
-        {/* Message */}
         <p className="text-gray-500 mt-2 max-w-md">
           The app you are looking for doesn’t exist or may have been removed.
         </p>
@@ -43,10 +43,19 @@ const AppDetails = () => {
     );
 
   const handleInstall = () => {
-    setInstalled(true);
-    toast.success(`${app.title} Installed Successfully!`);
-  };
+    const installedApps =
+      JSON.parse(localStorage.getItem("installedApps")) || [];
 
+    if (!installedApps.some((a) => a.id === app.id)) {
+      installedApps.push(app);
+      localStorage.setItem("installedApps", JSON.stringify(installedApps));
+      setInstalled(true);
+      toast.success(`${app.title} Installed Successfully!`);
+    } else {
+      toast.info(`${app.title} is already installed.`);
+      setInstalled(true);
+    }
+  };
   return (
     <>
       <div className="p-6 max-w-7xl mx-auto text-black min-h-screen">
