@@ -1,16 +1,25 @@
-# React + Vite
+# HERO IO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This React application allows users to browse a list of apps, install them, and manage installed apps. Users can view app details, install apps to localStorage, uninstall apps, and sort installed apps by download count. The application includes interactive features such as charts for app reviews and toast notifications for user actions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Browse all apps with search functionality.
+- View detailed app information, including ratings and reviews.
+- Install apps, which are saved in localStorage.
+- Uninstall apps with confirmation and toast notifications.
+- Sort installed apps by download count (High-Low, Low-High).
+- Responsive design with Tailwind CSS.
+- Loading indicators and error handling for smooth UX.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Frontend framework for building interactive UI.
+- **React Router DOM** – For routing between pages.
+- **Tailwind CSS, (Daisy UI)** – Styling and responsive design.
+- **React Toastify** – Toast notifications for user feedback.
+- **Recharts** – Displaying charts for app reviews.
+- **LocalStorage** – Persisting installed apps data in the browser.
+- **React Icons** – Icons for UI enhancement.
