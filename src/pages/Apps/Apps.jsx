@@ -3,12 +3,26 @@ import { useLoaderData, useNavigate } from "react-router";
 
 const Apps = () => {
   const appsData = useLoaderData();
-  const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
-  const filteredApps = appsData.filter((app) =>
-    app.title.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredApps, setFilteredApps] = useState(appsData);
+  const [loading, setLoading] = useState(false);
+
+  // 🔥 Search Handler (with simulated loading)
+  const handleSearch = (value) => {
+    setSearchTerm(value);
+    setLoading(true);
+
+    setTimeout(() => {
+      const result = appsData.filter((app) =>
+        app.title.toLowerCase().includes(value.toLowerCase()),
+      );
+
+      setFilteredApps(result);
+      setLoading(false);
+    }, 400);
+  };
 
   return (
     <>
@@ -17,30 +31,35 @@ const Apps = () => {
         <div className="mb-6 p-10 text-center">
           <h1 className="text-3xl font-bold">Our All Applications</h1>
           <p className="text-gray-600 mt-1">
-            Explore All Apps on the Market, developed by us. We code for
-            millions.
+            Explore all apps built for performance, scalability, and real users.
           </p>
         </div>
 
         {/* Search & Count */}
         <div className="flex items-center justify-between mb-6">
           <span className="font-medium">Total Apps: {filteredApps.length}</span>
+
           <input
             type="text"
             placeholder="Search apps..."
-            className="border rounded px-3 py-2 w-64 focus:outline-none"
+            className="border rounded px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-400"
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={(e) => handleSearch(e.target.value)}
           />
         </div>
 
-        {/* App Cards */}
-        {filteredApps.length > 0 ? (
+        {/* 🔥 Loading State */}
+        {loading ? (
+          <div className="flex justify-center mt-10">
+            <div className="w-10 h-10 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div>
+          </div>
+        ) : filteredApps.length > 0 ? (
+          /* App Cards */
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {filteredApps.map((app) => (
               <div
                 key={app.id}
-                className="border rounded p-4 cursor-pointer hover:shadow-lg transition"
+                className="border rounded-lg p-4 cursor-pointer hover:shadow-lg transition duration-200"
                 onClick={() => navigate(`/apps/${app.id}`)}
               >
                 <img
@@ -48,10 +67,13 @@ const Apps = () => {
                   alt={app.title}
                   className="h-32 w-full object-contain mb-4"
                 />
+
                 <h2 className="font-semibold text-lg">{app.title}</h2>
+
                 <p className="text-gray-500 text-sm mt-1">
                   Downloads: {app.downloads.toLocaleString()}
                 </p>
+
                 <p className="text-yellow-500 mt-1">
                   Rating: {app.ratingAvg} ⭐
                 </p>
@@ -59,6 +81,7 @@ const Apps = () => {
             ))}
           </div>
         ) : (
+          /* Not Found */
           <div className="text-center text-gray-500 mt-10">No App Found</div>
         )}
       </div>

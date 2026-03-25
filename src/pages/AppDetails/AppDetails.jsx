@@ -1,16 +1,29 @@
 import React, { useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useNavigation, useParams } from "react-router";
 import { toast } from "react-toastify";
-import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-
-
-
+import {
+  Bar,
+  BarChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const AppDetails = () => {
   const appsData = useLoaderData();
   const { id } = useParams();
   const app = appsData.find((a) => a.id === parseInt(id));
   const [installed, setInstalled] = useState(false);
+  const navigation = useNavigation();
+
+  if (navigation.state === "loading") {
+    return (
+      <div className="flex items-center justify-center min-h-50">
+        <div className="w-10 h-10 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div>
+      </div>
+    );
+  }
 
   if (!app)
     return <div className="p-6 text-center text-gray-500">App not found</div>;
