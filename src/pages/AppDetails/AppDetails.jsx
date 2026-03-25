@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaExclamationCircle } from "react-icons/fa";
 import { useLoaderData, useNavigation, useParams } from "react-router";
 import { toast } from "react-toastify";
 import {
@@ -26,7 +27,20 @@ const AppDetails = () => {
   }
 
   if (!app)
-    return <div className="p-6 text-center text-gray-500">App not found</div>;
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen text-center px-4">
+        {/* Icon */}
+        <FaExclamationCircle className="text-red-500 text-6xl mb-4" />
+
+        {/* Title */}
+        <h2 className="text-2xl font-bold text-gray-800">App Not Found</h2>
+
+        {/* Message */}
+        <p className="text-gray-500 mt-2 max-w-md">
+          The app you are looking for doesn’t exist or may have been removed.
+        </p>
+      </div>
+    );
 
   const handleInstall = () => {
     setInstalled(true);
@@ -35,7 +49,7 @@ const AppDetails = () => {
 
   return (
     <>
-      <div className="p-6 max-w-7xl mx-auto text-black">
+      <div className="p-6 max-w-7xl mx-auto text-black min-h-screen">
         {/* App Info */}
         <div className="flex flex-col md:flex-row gap-6 mb-8">
           <div className="shrink-0 w-full md:w-1/3">
